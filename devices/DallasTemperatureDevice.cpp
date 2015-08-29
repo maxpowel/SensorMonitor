@@ -3,6 +3,7 @@
 //
 
 #include "DallasTemperatureDevice.h"
+#include "quantities.h"
 
 DallasTemperatureDevice::DallasTemperatureDevice(DallasTemperature *sensors, DeviceAddress address){
     // The device name is just the address
@@ -16,6 +17,15 @@ DallasTemperatureDevice::DallasTemperatureDevice(DallasTemperature *sensors, Dev
 
 const char * DallasTemperatureDevice::getName(){
     return name_;
+}
+
+const char * DallasTemperatureDevice::getSensorType(){
+    return "DS18B20";
+}
+
+const int DallasTemperatureDevice::getSensorQuantities(int quantities[]){
+    quantities[0] = TEMPERATURE;
+    return 1;
 }
 
 float DallasTemperatureDevice::getValue() {

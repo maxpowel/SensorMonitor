@@ -58,3 +58,9 @@ Device* GardenMonitor::removeDeviceByIndex(int index) {
     }else return 0;
 }
 
+//TODO: duplicated information in quantities.h, should be synchronized
+char TEMP_MAP[][20] = {"temperature", "humidity", "illuminance", "pressure", "voltage", "current"};
+
+char * GardenMonitor::quantityName(int id) {
+    return TEMP_MAP[id];
+}

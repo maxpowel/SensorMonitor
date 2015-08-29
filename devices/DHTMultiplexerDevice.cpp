@@ -3,6 +3,7 @@
 //
 
 #include "DHTMultiplexerDevice.h"
+#include "quantities.h"
 
 DHTMultiplexerDevice::DHTMultiplexerDevice(Multiplexer *multiplexer, int address, int dhtType){
     multiplexer_ = multiplexer;
@@ -15,6 +16,16 @@ DHTMultiplexerDevice::DHTMultiplexerDevice(Multiplexer *multiplexer, int address
 
 const char * DHTMultiplexerDevice::getName(){
     return name_;
+}
+
+const char * DHTMultiplexerDevice::getSensorType(){
+    return "DHT";
+}
+
+const int DHTMultiplexerDevice::getSensorQuantities(int quantities[]){
+    quantities[0] = TEMPERATURE;
+    quantities[1] = HUMIDITY;
+    return 2;
 }
 
 int DHTMultiplexerDevice::getValues(float *values){

@@ -12,6 +12,8 @@ public:
     const char* getName();
     int totalValues();
     int getValues(float *values);
+    const char* getSensorType();
+    const int getSensorQuantities(int quantities[]);
 };
 
 

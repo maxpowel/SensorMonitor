@@ -3,6 +3,7 @@
 //
 
 #include "MultipleValueDevice.h"
+#include "quantities.h"
 
 float MultipleValueDevice::getValue(){
     return 0;

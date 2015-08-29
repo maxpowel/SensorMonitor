@@ -20,6 +20,8 @@ public:
     const char* getName();
     int totalValues();
     int getValues(float *values);
+    const char* getSensorType();
+    const int getSensorQuantities(int quantities[]);
 };
 
 #endif //GARDEN_MONITOR_BMP180DEVICE_H

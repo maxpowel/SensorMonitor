@@ -11,6 +11,8 @@ class DummyDevice: public SingleValueDevice{
 public:
     const char* getName();
     float getValue();
+    const char* getSensorType();
+    const int getSensorQuantities(int quantities[]);
 };
 
 

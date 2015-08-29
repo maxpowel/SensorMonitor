@@ -3,6 +3,7 @@
 //
 
 #include "BMP180Device.h"
+#include "quantities.h"
 
 BMP180Device::BMP180Device(){
     sensor_ = new Adafruit_BMP085_Unified();
@@ -11,6 +12,10 @@ BMP180Device::BMP180Device(){
 
 const char * BMP180Device::getName(){
     return "bmp180";
+}
+
+const char * BMP180Device::getSensorType(){
+    return "BMP180";
 }
 
 int BMP180Device::getValues(float *values){
@@ -23,6 +28,11 @@ int BMP180Device::getValues(float *values){
     values[1] = temperature;
 
     return 2;
+}
+
+const int BMP180Device::getSensorQuantities(int quantities[]){
+    quantities[0] = PRESSURE;
+    return 1;
 }
 
 int BMP180Device::totalValues() {

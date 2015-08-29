@@ -17,6 +17,8 @@ public:
     DallasTemperatureDevice(DallasTemperature *sensors, DeviceAddress address);
     const char* getName();
     float getValue();
+    const char* getSensorType();
+    const int getSensorQuantities(int quantities[]);
 };
 
 

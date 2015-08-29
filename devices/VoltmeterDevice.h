@@ -15,6 +15,8 @@ public:
     VoltmeterDevice(int readPin, float r1, float r2, float referenceVoltage);
     const char* getName();
     float getValue();
+    const char* getSensorType();
+    const int getSensorQuantities(int quantities[]);
 };
 
 #endif //GARDEN_MONITOR_VOLTMETERDEVICE_H
