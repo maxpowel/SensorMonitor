@@ -20,6 +20,8 @@
 #include "devices/VoltmeterDevice.h"
 #include "devices/BMP180Device.h"
 #include "devices/BH1750Device.h"
+#include "devices/INA219Device.h"
+
 
 
 #define GARDEN_MONITOR_MAX_DEVICES 32
