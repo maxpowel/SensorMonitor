@@ -32,7 +32,8 @@ int BMP180Device::getValues(float *values){
 
 const int BMP180Device::getSensorQuantities(int quantities[]){
     quantities[0] = PRESSURE;
-    return 1;
+    quantities[1] = TEMPERATURE;
+    return 2;
 }
 
 int BMP180Device::totalValues() {
