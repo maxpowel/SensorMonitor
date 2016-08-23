@@ -1,2 +1,2 @@
-# GardenMonitor
-Arduino libraries for garden monitoring
+# SensorMonitor
+Arduino library for sensor monitoring

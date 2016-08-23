@@ -2,8 +2,8 @@
 // Created by alvaro on 8/08/15.
 //
 
-#ifndef GARDEN_MONITOR_INA219DEVICE_H
-#define GARDEN_MONITOR_INA219DEVICE_H
+#ifndef SENSOR_MONITOR_INA219DEVICE_H
+#define SENSOR_MONITOR_INA219DEVICE_H
 
 #include "MultipleValueDevice.h"
 
@@ -23,4 +23,4 @@ public:
     const int getSensorQuantities(int quantities[]);
 };
 
-#endif //GARDEN_MONITOR_INA219DEVICE_H
+#endif //SENSOR_MONITOR_INA219DEVICE_H

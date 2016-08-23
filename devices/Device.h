@@ -2,8 +2,8 @@
 // Created by alvaro on 8/08/15.
 //
 
-#ifndef GARDEN_MONITOR_DEVICE_H
-#define GARDEN_MONITOR_DEVICE_H
+#ifndef SENSOR_MONITOR_DEVICE_H
+#define SENSOR_MONITOR_DEVICE_H
 
 
 class Device {
@@ -18,4 +18,4 @@ public:
 
 
 
-#endif //GARDEN_MONITOR_DEVICE_H
+#endif //SENSOR_MONITOR_DEVICE_H

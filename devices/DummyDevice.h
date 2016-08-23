@@ -2,8 +2,8 @@
 // Created by alvaro on 8/08/15.
 //
 
-#ifndef GARDEN_MONITOR_DUMMYDEVICE_H
-#define GARDEN_MONITOR_DUMMYDEVICE_H
+#ifndef SENSOR_MONITOR_DUMMYDEVICE_H
+#define SENSOR_MONITOR_DUMMYDEVICE_H
 
 #include "SingleValueDevice.h"
 
@@ -16,4 +16,4 @@ public:
 };
 
 
-#endif //GARDEN_MONITOR_DUMMYDEVICE_H
+#endif //SENSOR_MONITOR_DUMMYDEVICE_H

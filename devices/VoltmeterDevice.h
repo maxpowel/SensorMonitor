@@ -2,8 +2,8 @@
 // Created by alvaro on 8/08/15.
 //
 
-#ifndef GARDEN_MONITOR_VOLTMETERDEVICE_H
-#define GARDEN_MONITOR_VOLTMETERDEVICE_H
+#ifndef SENSOR_MONITOR_VOLTMETERDEVICE_H
+#define SENSOR_MONITOR_VOLTMETERDEVICE_H
 
 #include "SingleValueDevice.h"
 #include <VoltMeter.h>
@@ -19,4 +19,4 @@ public:
     const int getSensorQuantities(int quantities[]);
 };
 
-#endif //GARDEN_MONITOR_VOLTMETERDEVICE_H
+#endif //SENSOR_MONITOR_VOLTMETERDEVICE_H

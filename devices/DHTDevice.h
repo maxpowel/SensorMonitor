@@ -2,8 +2,8 @@
 // Created by alvaro on 8/08/15.
 //
 
-#ifndef GARDEN_MONITOR_DHT_H
-#define GARDEN_MONITOR_DHT_H
+#ifndef SENSOR_MONITOR_DHT_H
+#define SENSOR_MONITOR_DHT_H
 
 #include <Adafruit_Sensor.h>
 #include "MultipleValueDevice.h"
@@ -26,4 +26,4 @@ public:
 
 
 
-#endif //GARDEN_MONITOR_DHTMULTIPLEXERDEVICE_H
+#endif //SENSOR_MONITOR_DHTMULTIPLEXERDEVICE_H

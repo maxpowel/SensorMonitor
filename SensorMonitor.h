@@ -2,8 +2,8 @@
 // Created by alvaro on 26/07/15.
 //
 
-#ifndef GARDEN_MONITOR_MONITOR_H
-#define GARDEN_MONITOR_MONITOR_H
+#ifndef SENSOR_MONITOR_MONITOR_H
+#define SENSOR_MONITOR_MONITOR_H
 
 
 
@@ -24,12 +24,12 @@
 
 
 
-#define GARDEN_MONITOR_MAX_DEVICES 32
+#define SENSOR_MONITOR_MAX_DEVICES 32
 
 
-class GardenMonitor {
+class SensorMonitor {
 public:
-    GardenMonitor();
+    SensorMonitor();
     int getTotalDevices();
     int getMaxDevices();
     Device *getDevice(int index);
@@ -39,10 +39,10 @@ public:
     char * quantityName(int id);
 
 private:
-    Device *devices[GARDEN_MONITOR_MAX_DEVICES];
+    Device *devices[SENSOR_MONITOR_MAX_DEVICES];
     int totalDevices;
 
 };
 
 
-#endif //GARDEN_MONITOR_MONITOR_H
+#endif //SENSOR_MONITOR_MONITOR_H

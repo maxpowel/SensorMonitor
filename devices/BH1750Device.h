@@ -2,8 +2,8 @@
 // Created by alvaro on 8/08/15.
 //
 
-#ifndef GARDEN_MONITOR_BH1750DEVICE_H
-#define GARDEN_MONITOR_BH1750DEVICE_H
+#ifndef SENSOR_MONITOR_BH1750DEVICE_H
+#define SENSOR_MONITOR_BH1750DEVICE_H
 
 #include <Wire.h>
 #include <BH1750.h>
@@ -24,4 +24,4 @@ public:
 
 
 
-#endif //GARDEN_MONITOR_BH1750DEVICE_H
+#endif //SENSOR_MONITOR_BH1750DEVICE_H
