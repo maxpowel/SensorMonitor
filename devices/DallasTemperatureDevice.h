@@ -8,6 +8,8 @@
 #include "SingleValueDevice.h"
 #include <DallasTemperature.h>
 
+
+
 class DallasTemperatureDevice: public SingleValueDevice {
 private:
     char name_[17];
@@ -15,10 +17,15 @@ private:
     DeviceAddress address_;
 public:
     DallasTemperatureDevice(DallasTemperature *sensors, DeviceAddress address);
+    DallasTemperatureDevice(DeviceAddress address);
     const char* getName();
     float getValue();
-    const char* getSensorType();
+    static char* getSensorType();
     const int getSensorQuantities(int quantities[]);
+    static Device* fromConfig(void *);
+    static DallasTemperature *sensors;
+
+    // static OneWire *oneWire;
 };
 
 

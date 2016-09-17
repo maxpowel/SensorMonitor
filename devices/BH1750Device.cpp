@@ -28,3 +28,7 @@ float BH1750Device::getValue() {
     unsigned int light = sensor_->readLightLevel();
     return (float) light;
 }
+
+BH1750Device * BH1750Device::fromConfig(void *){
+  return new BH1750Device();
+}

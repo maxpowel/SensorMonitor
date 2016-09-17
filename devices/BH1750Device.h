@@ -20,6 +20,7 @@ public:
     float getValue();
     const char* getSensorType();
     const int getSensorQuantities(int quantities[]);
+    static BH1750Device* fromConfig(void *);
 };
 
 

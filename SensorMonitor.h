@@ -6,7 +6,7 @@
 #define SENSOR_MONITOR_MONITOR_H
 
 
-
+#include "devices/quantities.h"
 #include "devices/Device.h"
 #include "devices/SingleValueDevice.h"
 #include "devices/MultipleValueDevice.h"
@@ -36,7 +36,7 @@ public:
     int addDevice(Device *device);
     bool removeDevice(Device *device);
     Device *removeDeviceByIndex(int index);
-    char * quantityName(int id);
+    const char * quantityName(int id);
 
 private:
     Device *devices[SENSOR_MONITOR_MAX_DEVICES];

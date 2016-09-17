@@ -12,7 +12,7 @@ public:
     virtual int getValues(float *values);
     virtual float getValue();
     virtual bool multipleValues();
-    virtual const char* getSensorType();
+    static char* getSensorType();
     virtual const int getSensorQuantities(int quantities[]);
 };
 
